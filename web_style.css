@@ -1,0 +1,182 @@
+@font-face {
+      font-family: 'TECHNIC';
+      src: url(../TECHNIC_.TTF);
+}
+
+
+html, body {
+      background-color: #161617;
+      font-family: 'TECHNIC', 'San Francisco', monospace, sans-serif, Helvetica, Arial;
+      scroll-behavior: smooth;
+
+      text-rendering: optimizeLegibility;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-text-size-adjust: 100%;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+
+      margin: 0 auto;
+      height: 100%;
+      /* width: auto; */
+}
+
+
+/* 目錄 */
+.menu {
+      position: fixed;
+      background-color: #e3e3e334;
+      box-shadow: 0 0 0.5rem rgb(255, 255, 255);
+      border-radius: 10px;
+      top: .5rem;
+      left: .5rem;
+      text-align: center;
+      font-weight: bold;
+      z-index: 999;
+      transition: transform 0.4s cubic-bezier(.71,.23,.75,.91);
+}
+
+.menu * {
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      margin: .2rem .5rem;
+      transition: all .35s ease;
+}
+
+.menu.shrink {
+      transform: translateY(-100%);
+}
+
+.menu a {
+      position: relative;
+      cursor: pointer;
+      padding: .5rem .5rem;
+      color: #161617;
+      text-decoration: none;
+      font-size: 20px;
+}
+
+.menu a::before,
+.menu a::after {
+      content: '';
+      position: absolute;
+      height: .4rem;
+      width: .4rem;
+      opacity: 0;
+      transition: all .35s ease;
+}
+
+.menu a::before {
+      content: '';
+      right: 0;
+      top: 0;
+      border-top: 2px solid #f5f5f7;
+      border-right: 2px solid #f5f5f7;
+      transform: translate(-200%, 100%);
+}
+
+.menu a:after {
+      content: '';
+      left: 0;
+      bottom: 0;
+      border-bottom: 2px solid #f5f5f7;
+      border-left: 2px solid #f5f5f7;
+      transform: translate(200%, -100%)
+}
+
+.menu a:hover:before,
+.menu a:hover:after{
+      transform: translate(0,0);
+      opacity: 0.7;
+}
+
+.menu a:hover {
+      color: #f5f5f7;
+      font-weight: normal;
+      opacity: 0.7;
+}
+
+.menu a:active{
+      opacity: 0.5;
+}
+
+
+
+/* 封面 */
+.head_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+}
+
+.head_container_background_image{
+      position: fixed;
+      background-position: center;
+      background-size: cover;
+      -webkit-background-size: cover; 
+      width: 100vw;
+      height: 100vh;
+      background-image: url("img/head_img.jpg");
+      background-repeat: no-repeat;
+      pointer-events: none; 
+}
+
+.head_centeralign{
+      position:absolute;
+      background-color: #e3e3e39f;
+      box-shadow:0 0 20px rgb(255, 255, 255);
+      border-radius: 20px;
+      width: 50%;
+      padding: 1rem 2rem;
+      color: rgba(6, 6, 6, 0.5);
+}
+
+.head_title {
+      text-align: center;
+      margin:0 0 15px 0;
+      letter-spacing: 1pt;
+      font-size: 30px;
+      font-weight: bold;  
+}
+
+.head_content {
+      text-align: left;
+      line-height: 1.2;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 900;
+      display: none;
+}
+
+
+.text_container{
+      position: relative;
+      background-color: #161617;
+      display: block;
+      padding: 40px;
+      width: 100%;
+      text-align: center;   
+      z-index: 999;
+}
+
+.text_icon_img{
+      width: 60px;
+      z-index: 999;
+}
+
+.text_text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f5f5f7;
+      font-size: 15px;
+}
+
+@media (max-width: 414px) {
+      .head_content{
+            font-size: 14px;
+      }
+}

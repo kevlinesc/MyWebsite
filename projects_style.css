@@ -1,0 +1,139 @@
+.projects_container{
+      background-color: #161617;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: auto;
+      height: auto;
+}
+
+.projects_centeralign{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 3rem;
+      position:relative;
+      margin: 2rem 0;
+      color: #f5f5f7;
+      width: calc(100vw);
+      max-width: 1300px;
+}
+
+.projects_header_title {
+      text-align: center;
+      font-size: 44px;
+      width: 100%;
+}
+
+.projects_category_description{
+      text-align: center;
+      margin: 2rem 0 3rem 0;
+      width: 100%;
+      font-size: 18px;
+      min-width: 380px;
+}
+
+/* Reader */
+.projects_category_title{
+      text-align: center;
+      margin: 3rem 0 1rem 0;
+      width: 100%;
+      font-size: 30px;
+}
+
+.projects_details{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 380px;
+      height: auto;
+      margin: 30px 10px;
+      min-width: 380px;
+}
+
+.projects_block-img{
+      width:250px;
+      height: auto;
+      margin: 10px;
+      min-width: 250px;
+}
+
+.projects_img{
+      background-color: #161617;
+      border-radius: 20px;
+      height: auto;
+      width: 100%;
+      object-fit:cover;
+      transition: 0.5s;
+}
+
+.projects_img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+}
+
+.projects_title{
+      font-size: 28px;
+}
+
+.projects_details_hr{
+      border: 0;
+      border-top: 1px solid #d0d0d5;
+      width:60%;
+      margin-bottom: .5rem;
+}
+
+.projects_details_content{
+      margin: 0 1rem .5rem 1rem;
+      display: block;
+      text-align: center;
+}
+
+.projects_category_reader_list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      margin: .5rem;
+      font-size: 18px;
+}
+
+
+/* thermal */
+.projects_category_thermal_description{
+      text-align: center;
+      display: block;
+      width: 1300px;
+}
+
+.projects_category_thermal_list{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      margin: .5rem;
+      font-size: 18px;
+}
+
+
+
+@media (max-width: 844px) {
+      .projects_details{
+            width: 300px;
+            min-width: 300px;
+      }
+}
+
+@media (max-width: 414px){
+      .projects_category_reader_list{
+            font-size: 14px;
+      }
+
+      .projects_category_thermal_description{
+            font-size: 14px;
+      }
+}

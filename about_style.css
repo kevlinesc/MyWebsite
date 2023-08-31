@@ -1,0 +1,447 @@
+.about_container{
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      /* background-color: #6c6cb1; */
+      
+      width: 100%;
+      height: auto;
+
+      /* background-color: #161617; */
+      background: linear-gradient(-45deg, #161617, #ffffff, #161617);
+      /* background: linear-gradient(-45deg, #161617, #303030, #494949, #636363, #7c7c7c); */
+      /* background: linear-gradient(-45deg, #ebebeb, #999999, #494949, #242424); */
+      /* background: linear-gradient(-45deg, #161617, #56565a, #8b8b92, #161617); */
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+.about_centeralign{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position:relative;
+
+      padding: 2rem 3rem;
+      margin: 2rem 0;
+      color: #f5f5f7;
+      width: calc(100vw);
+      max-width: 1300px;
+}
+
+.about_header{
+      /* background-color: #cc11119f; */
+      text-align: center;
+      width: 100%;
+      font-size: 44px;
+      min-width: 440px;
+}
+
+.about_description{
+      /* background-color: #6211cc9f; */
+      text-align: center;
+      margin: 2rem 0 3rem 0;
+      width: 100%;
+      font-size: 18px;
+      min-width: 440px;
+}
+
+
+/* 個人圖像 */
+.about_me_block-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      width: 440px;
+      height: 550px;
+      margin: 10px;
+      overflow: hidden;
+      min-width: 440px;
+}
+
+.about_me_img{
+      height: auto;
+      width: 100%;
+      transition: 0.5s;
+      object-fit:cover;
+}
+
+.about_me_img:hover{
+      transform: scale(1.4);
+      cursor: pointer;
+}
+
+
+/* 自我介紹 */
+.about_me_block-1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+      border-radius: 20px;
+      width: 440px;
+      height: 550px;
+      margin: 10px;
+      min-width: 440px;
+}
+
+.about_name_ch{
+      font-size: 40px;
+      margin: .5rem;
+}
+
+.about_name_en{
+      font-size: 38px;
+      margin: .5rem;
+}
+
+.about_contact{
+      margin: 1.5rem;
+}
+
+.about_contact_info{
+      font-family: 'TECHNIC', monospace, sans-serif;
+      font-style: normal;
+      text-decoration: none;
+      color: rgb(41, 151, 255);
+      font-size: 18px;
+}
+
+.about_contact_info:hover{
+      color: rgba(182, 182, 182, 0.582);
+}
+
+.about_education{
+      font-size: 20px;
+      margin: 1rem;
+}
+
+.about_link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+}
+
+.about_link_to{
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: .5rem 2rem;
+}
+
+.about_link_img{
+      background-color: #000000;
+      max-height:100%;
+      max-width:100%;
+      border-radius: 20px;
+      transition: 0.5s;
+}
+
+.about_link_img:hover{
+      transform: scale(1.3);
+}
+
+.about_link_img:active{
+      opacity: 0.8;
+}
+
+/* skills & 專利 */
+.about_details_block-1{
+      background-color: rgb(0, 0, 0);
+      border-radius: 20px;
+      width: 440px;
+      height: 452px;
+      margin: 10px;
+      min-width: 440px;
+}
+
+.about_details_title{
+      font-size: 30px;
+      padding: 40px 40px 10px 40px;
+}
+
+.about_details_hr{
+      width: 75%;
+      border: 0;
+      border-top: 1px solid #d0d0d5;
+}
+
+.about_details_content{
+      margin: 10px 20px 50px 20px;
+      font-size: 18px;
+}
+
+.about_details_block-2{
+      background-color: rgb(0, 0, 0);
+      border-radius: 20px;
+      width: 440px;
+      height: 452px;
+      margin: 10px;
+      min-width: 440px;
+}
+
+/* 期刊 & 研討會 */
+.about_papers_block-1{
+      background-color: rgb(0, 0, 0);
+      border-radius: 20px;
+      width: 900px;
+      height: auto;
+      margin: 10px 20px 10px 20px;
+      min-width: 440px;
+}
+
+.about_papers_title{
+      font-size: 30px;
+      padding: 40px 40px 10px 40px;
+}
+
+.about_papers_content{
+      margin: 10px 20px 45px 20px;
+      font-size: 18px;
+}
+
+.about_papers_link{
+      font-style: normal;
+      text-decoration: none;
+      color: rgb(41, 151, 255);
+}
+
+.about_papers_link:hover{
+      color: rgba(182, 182, 182, 0.582);
+}
+
+.about_papers_hr{
+      width:88%;
+      border: 0;
+      border-top: 1px solid #d0d0d5;
+}
+
+
+@media (max-width: 1336px) {
+      .about_header{
+            font-size: 34px;
+      }
+
+      .about_name_ch{
+            font-size: 30px;
+      }
+
+      .about_name_en{
+            font-size: 28px;
+      }
+
+      .about_education{
+            font-size: 18px;
+      }
+
+      .about_details_title{
+            font-size: 26px;
+      }
+
+      .about_papers_title{
+            font-size: 26px;
+      }
+}
+
+
+@media (max-width: 1024px) {
+      .about_me_block-img{
+            width: 900px;
+      }
+      
+      .about_me_img{
+            width: 100%;
+            /* transform: translate(50px, 170px); */
+      }
+
+      .about_me_block-1{
+            width: 900px;
+            height: auto+10px;
+      }
+      
+      .about_details_block-1{
+            width: 900px;
+            height: auto;
+      }
+
+      .about_details_block-2{
+            width: 900px;
+            height: auto;
+      }
+
+      .about_details_hr{
+            width:88%;
+      }
+}
+
+
+
+@media (max-width: 414px) {
+      .about_header{
+            min-width: 368px;
+      }
+
+      .about_description{
+            margin: 1rem 0 2rem 0;
+            min-width: 368px;
+      }
+
+      .about_me_block-img {
+            width: 368px;
+            height: 460px;
+            min-width: 368px;
+      }
+
+      .about_me_block-1{
+            width: 368px;
+            height: 460px;
+            min-width: 368px;
+      }
+
+      .about_name_ch{
+            font-size: 26px;
+      }
+
+      .about_name_en{
+            font-size: 24px;
+      }
+
+      .about_education{
+            font-size: 16px;
+            margin: .5rem;
+      }
+
+      .about_details_block-1{
+            width: 368px;
+            height: auto;
+            min-width: 368px;
+      }
+
+      .about_details_title{
+            font-size: 24px;
+      }
+
+      .about_details_content{
+            margin: 10px 20px 50px 20px;
+            font-size: 14px;
+      }
+      
+      .about_details_block-2{
+            width: 368px;
+            height: auto;
+            min-width: 368px;
+      }
+
+      .about_papers_title{
+            font-size: 24px;
+      }
+
+      .about_papers_block-1{
+            width: 368px;
+            height: auto;
+            min-width: 368px;
+      }
+
+      .about_papers_content{
+            font-size: 14px;
+      }
+
+}
+
+@media (max-width: 375px) {
+      .about_header{
+            font-size: 34px;
+            min-width: 352px;
+      }
+
+      .about_description{
+            margin: 1rem 0 2rem 0;
+            min-width: 352px;
+      }
+
+      .about_me_block-img {
+            width: 352px;
+            height: 440px;
+            min-width: 352px;
+      }
+
+      .about_me_block-1{
+            width: 352px;
+            height: 440px;
+            min-width: 352px;
+      }
+
+      .about_name_ch{
+            font-size: 26px;
+      }
+
+      .about_name_en{
+            font-size: 24px;
+      }
+
+      .about_education{
+            font-size: 14px;
+            margin: .5rem;
+      }
+
+      .about_details_block-1{
+            width: 352px;
+            height: auto;
+            min-width: 352px;
+      }
+
+      .about_details_title{
+            font-size: 24px;
+      }
+
+      .about_details_content{
+            margin: 10px 20px 50px 20px;
+            font-size: 14px;
+      }
+      
+      .about_details_block-2{
+            width: 352px;
+            height: auto;
+            min-width: 352px;
+      }
+
+      .about_papers_title{
+            font-size: 24px;
+      }
+
+      .about_papers_block-1{
+            width: 352px;
+            height: auto;
+            min-width: 352px;
+      }
+
+      .about_papers_content{
+            font-size: 14px;
+      }
+
+}
+
+
+
