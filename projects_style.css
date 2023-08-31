@@ -132,6 +132,12 @@
       .projects_header_title{
             font-size: 34px;
       }
+
+      .projects_category_description{
+            margin: 1rem 0 2rem 0;
+            min-width: 368px;
+            font-size: 18px;
+      }
       
       .projects_category_reader_list{
             font-size: 14px;

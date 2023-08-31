@@ -27,8 +27,13 @@
 }
 
 .timeline_header_description{
-      margin: 2rem 0 3rem 0;
-      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 1rem 0 2rem 0;
+      min-width: 368px;
+      font-size: 18px;
 }
 
 .timeline {
@@ -91,6 +96,7 @@
       }
 
       .timeline_header_description{
+            margin: 2rem 0 3rem 0;
             font-size: 18px;
       }
 
