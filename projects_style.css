@@ -129,6 +129,10 @@
 }
 
 @media (max-width: 414px){
+      .projects_header_title{
+            font-size: 34px;
+      }
+      
       .projects_category_reader_list{
             font-size: 14px;
       }

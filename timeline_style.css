@@ -22,6 +22,15 @@
       margin-bottom: 30px;
 }
 
+.timeline_header_title{
+      font-size: 34px;
+}
+
+.timeline_header_description{
+      margin: 2rem 0 3rem 0;
+      font-size: 14px;
+}
+
 .timeline {
       width: 80%;
       height: auto;
@@ -82,7 +91,6 @@
       }
 
       .timeline_header_description{
-            margin: 2rem 0 3rem 0;
             font-size: 18px;
       }
 
